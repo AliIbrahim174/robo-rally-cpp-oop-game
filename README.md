@@ -188,28 +188,6 @@ robo_rally.exe
 
 ---
 
-## Screenshots
-
-Add gameplay screenshots here after uploading them to the repository.
-
-Recommended screenshots:
-
-```text
-assets/screenshots/design-mode.png
-assets/screenshots/play-mode.png
-assets/screenshots/game-board.png
-assets/screenshots/player-turn.png
-```
-
-Example Markdown:
-
-```md
-![Design Mode](assets/screenshots/design-mode.png)
-![Play Mode](assets/screenshots/play-mode.png)
-```
-
----
-
 ## Course Context
 
 This project was developed for the **CMPS102 Programming Techniques** course at **Cairo University**.
