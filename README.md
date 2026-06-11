@@ -1,112 +1,251 @@
-# **RoboRally**
+# Robo Rally — C++ OOP Strategy Game
 
-**RoboRally** is a strategy-based game developed in **C++** that combines engaging gameplay mechanics with advanced Object-Oriented Programming (OOP) principles. Designed as a university project, the game emphasizes both coding excellence and user interaction through a graphical interface.
+A C++ strategy-based grid game developed using **Object-Oriented Programming**, custom game logic, and GUI-based interaction.
 
----
-
-## **Table of Contents**
-- [Introduction](#introduction)
-- [Features](#features)
-- [Game Modes](#game-modes)
-- [Technologies Used](#technologies-used)
-- [Setup and Installation](#setup-and-installation)
-- [How to Play](#how-to-play)
-- [Contributions](#contributions)
-- [License](#license)
+The project was built as part of the **CMPS102 Programming Techniques** course at Cairo University and focuses on applying OOP concepts in a complete interactive game system.
 
 ---
 
-## **Introduction**
+## Overview
 
-RoboRally is a two-player game where robots navigate a grid filled with **boosters**, **obstacles**, and strategic elements. Players aim to reach a **flag cell** before their opponent by choosing movement commands, using power-ups, and avoiding dangers. The game showcases the integration of **OOP principles** and **GUI-based interaction**, creating a fun and educational experience.
+Robo Rally is a two-player strategy game where robots move across a grid filled with objects, obstacles, power-ups, and danger zones.
 
----
+Players use movement commands, interact with grid elements, manage health, and compete to reach the flag before the opponent.
 
-## **Features**
+The project demonstrates practical application of:
 
-- **Two Game Modes**:
-  - **Design Mode**: Customize the game grid by adding objects like flags, belts, danger zones, water pits, and more.
-  - **Play Mode**: Compete against another player to reach the flag while interacting with game objects and using strategic moves.
-- **Grid Mechanics**:
-  - Supports a 5x11 grid with numbered cells (1-55).
-  - Game objects include flags, belts, danger zones, workshops, antennas, water pits, and rotating gears.
-- **Player Interactions**:
-  - Health-based command system: Players with higher health can execute more moves per turn.
-  - Strategic shooting phase: Robots fire lasers at each other in the same row or column.
-  - Workshop upgrades: Purchase weapons, consumables, and devices like lasers or shields.
-- **Graphics**:
-  - GUI-based interaction with toolbars, command bars, and status updates.
-  - Visual representation of players, grid objects, and commands.
+- C++ programming
+- Object-Oriented Programming
+- Game logic design
+- Grid-based movement systems
+- Player interaction mechanics
+- GUI-based user interaction
+- Modular project structure
 
 ---
 
-## **Game Modes**
+## My Role
 
-### **1. Design Mode**
-- Add, edit, or remove game objects on the grid.
-- Save and load grid configurations for future use.
-- Supported objects:
-  - **Flag**: Destination cell for the game.
-  - **Belts**: Move robots between cells.
-  - **Water Pits**: Instantly destroy robots.
-  - **Danger Zones**: Reduce robot health.
-  - **Workshops**: Repair robots and purchase upgrades.
-  - **Rotating Gears**: Rotate robots by 90°.
+I contributed as part of a 4-member team.
 
-### **2. Play Mode**
-- Players navigate their robots on the grid using movement commands:
-  - **Move Forward**, **Move Backward**, **Rotate Left**, **Rotate Right**.
-- Commands are randomly generated and limited by player health.
-- Robots interact with grid objects during movement and engage in strategic battles.
+My responsibilities included:
+
+- Implementing core C++ game logic
+- Applying object-oriented design principles
+- Working on player movement and interaction logic
+- Supporting integration between game objects and gameplay flow
+- Testing and debugging gameplay behavior
+- Collaborating with team members on final project delivery
 
 ---
 
-## **Technologies Used**
+## Key Features
 
-- **Programming Language**: C++
-- **Development Paradigm**: Object-Oriented Programming (OOP)
-- **Graphics Library**: Custom GUI framework for graphical interaction
-
----
-
-## **Setup and Installation**
-
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/AliIbrahim174/roborally.git
-
-   ## **Build the Project**
-
-- Open the project in a C++ IDE (e.g., Visual Studio or Code::Blocks).
-- Build the project to ensure all dependencies are resolved.
-
-## **Run the Application**
-
-- Execute the built application to start the game.
+- Two-player robot strategy gameplay
+- Grid-based game board
+- Design Mode for creating and editing the board
+- Play Mode for running the actual game
+- Player health system
+- Command-based movement system
+- Strategic shooting phase
+- Workshop upgrades and consumables
+- Multiple grid objects and obstacles
+- GUI-based interaction
 
 ---
 
-## **How to Play**
+## Game Modes
 
-### **In Design Mode**
-- Use the toolbar to add objects to the grid.
-- Save and load grid configurations for future use.
+### Design Mode
 
-### **In Play Mode**
-1. Select movement commands based on health.
-2. Navigate the grid and interact with objects.
-3. Use consumables or workshop upgrades to gain an advantage.
-4. Be the first to reach the flag cell to win!
+Design Mode allows users to customize the game grid by adding, editing, or removing game objects.
+
+Supported grid objects include:
+
+- Flag
+- Belts
+- Water pits
+- Danger zones
+- Workshops
+- Antennas
+- Rotating gears
+
+### Play Mode
+
+Play Mode allows two players to compete by controlling robots across the grid.
+
+Players can:
+
+- Move forward
+- Move backward
+- Rotate left
+- Rotate right
+- Use commands based on health level
+- Interact with board objects
+- Use workshops and upgrades
+- Fire lasers during the shooting phase
+- Try to reach the flag before the opponent
 
 ---
 
-## **Contributions**
+## Game Mechanics
 
-This project was developed as part of the **CMPS102 Programming Techniques** course at Cairo University. Team members collaborated on various aspects, including game design, GUI development, and core functionality implementation.
+| Mechanic | Description |
+|---|---|
+| Grid System | The game uses a cell-based board for robot movement and object placement |
+| Health-Based Commands | Player health affects the number of commands available per turn |
+| Obstacles | Objects such as water pits and danger zones affect movement and survival |
+| Workshops | Players can repair robots or purchase upgrades |
+| Shooting Phase | Robots can shoot lasers when aligned in the same row or column |
+| Flag Objective | The first player to reach the flag wins |
 
 ---
 
-## **License**
+## Tech Stack
 
-This project is open-source and available under the [MIT License](LICENSE).
+| Category | Tools |
+|---|---|
+| Programming Language | C++ |
+| Main Concept | Object-Oriented Programming |
+| Application Type | Strategy Game |
+| Interface | GUI-based interaction |
+| Course | CMPS102 Programming Techniques |
+| Institution | Cairo University |
 
+---
+
+## Project Structure
+
+Update this section according to the final repository files.
+
+Recommended structure:
+
+```text
+robo-rally-cpp-oop-game/
+  README.md
+  src/
+    main.cpp
+    Game.cpp
+    Player.cpp
+    Robot.cpp
+    Grid.cpp
+    Cell.cpp
+    GameObject.cpp
+  include/
+    Game.h
+    Player.h
+    Robot.h
+    Grid.h
+    Cell.h
+    GameObject.h
+  assets/
+    images/
+  docs/
+    project-report.pdf
+```
+
+---
+
+## Installation and Setup
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/AliIbrahim174/robo-rally-cpp-oop-game.git
+cd robo-rally-cpp-oop-game
+```
+
+### 2. Open the project
+
+Open the project using a C++ IDE such as:
+
+- Visual Studio
+- Code::Blocks
+- CLion
+- VS Code with C++ extensions
+
+### 3. Build the project
+
+Build the project from your IDE.
+
+If the project is organized with source files under `src/`, you can compile with:
+
+```bash
+g++ src/*.cpp -o robo_rally
+```
+
+### 4. Run the game
+
+```bash
+./robo_rally
+```
+
+On Windows:
+
+```bash
+robo_rally.exe
+```
+
+---
+
+## Screenshots
+
+Add gameplay screenshots here after uploading them to the repository.
+
+Recommended screenshots:
+
+```text
+assets/screenshots/design-mode.png
+assets/screenshots/play-mode.png
+assets/screenshots/game-board.png
+assets/screenshots/player-turn.png
+```
+
+Example Markdown:
+
+```md
+![Design Mode](assets/screenshots/design-mode.png)
+![Play Mode](assets/screenshots/play-mode.png)
+```
+
+---
+
+## Course Context
+
+This project was developed for the **CMPS102 Programming Techniques** course at **Cairo University**.
+
+The objective was to build a complete C++ application that applies object-oriented programming concepts in a larger project, rather than using isolated small exercises.
+
+---
+
+## Learning Outcomes
+
+This project helped strengthen my understanding of:
+
+- C++ class design
+- Object-oriented programming
+- Encapsulation and inheritance
+- Game state management
+- Debugging larger C++ projects
+- Team-based code integration
+- Turning requirements into working gameplay logic
+
+---
+
+## Future Improvements
+
+- Add more levels and board layouts
+- Improve GUI design
+- Add single-player mode
+- Add AI opponent logic
+- Add save/load game progress
+- Improve build documentation
+- Add unit tests for core game logic
+
+---
+
+## License
+
+This repository is currently shared for academic and portfolio purposes.
+
+If this project is extended for public reuse, a formal open-source license such as MIT or BSD-3-Clause should be added.
